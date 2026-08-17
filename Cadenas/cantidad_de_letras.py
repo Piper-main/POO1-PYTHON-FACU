@@ -7,6 +7,7 @@ letras que tienen el nombre
 
 nombre = input(" ¿cual es tu nombre?: ")
 lon = len(nombre) 
+
 """ len() recibe un argumento entre parentesis, el nombre de la variable que
     que queremos contar sus caracteres, luego guardamos ese conteo en otra variable
     para luego poder utilizarla
