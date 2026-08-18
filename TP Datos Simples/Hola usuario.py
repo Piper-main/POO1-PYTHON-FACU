@@ -12,4 +12,5 @@ edad = int(input("ingrese su edad"))
 
 print(f"tu edad es: {edad + 1}")
 
-# poner f al principio y todo lo que compagamos entre "" los muestra por pantallan
+# poner f al principio y muestra dentro de las "" las variables poniendolas 
+# dentro de {} llaves, 
