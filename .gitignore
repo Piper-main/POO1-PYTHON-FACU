@@ -7,3 +7,4 @@ env/
 .vscode/
 *.save
 script_personales/
+.idea/
