@@ -1,7 +1,7 @@
 import aritmeticas.ope_basicas as ob
 
-                                        #importa del directorio aritmeticas/ del archivo ope_basicas.py la funcion
-                                        #sumar y restar, le pongo un alias ob
+# importa del directorio aritmeticas/ del archivo ope_basicas.py la funcion
+# #sumar y restar, le pongo un alias ob
 
 num1 = int(input(" Ingrese un numero: "))
 num2 = int(input(" Ingrese el segundo numero: "))
