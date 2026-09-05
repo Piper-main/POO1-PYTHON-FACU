@@ -31,6 +31,4 @@ class Nota:
             raise ValueError("El valor debe estar entre 0 y 10.")
         self.__valor = max(self.__valor, nuevoValor)
 
-notas = Nota(5)
-notas.recuperar()
-print(notas)
+
