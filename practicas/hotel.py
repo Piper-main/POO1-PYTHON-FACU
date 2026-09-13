@@ -50,4 +50,25 @@ class Habitacion():
             raise RuntimeError("Estado Ingresado Invalido")
         self.__estado= estado
 
+class Hotel():
+
+    def __init__(self):
+        self.__habitaciones= []
         
+    def Agregar_habitacion(self):
+        self.__habitaciones.append(Habitacion)
+
+    def consultar_habitaciones_libres(self):
+        habitaciones_libres = []
+
+        for habitacion in self.__habitaciones:
+            if habitacion.estado == EstadoHabitacion.LIBRE:
+                habitaciones_libres.append(habitacion)
+
+        return habitaciones_libres
+    
+    def cambiar_estado_habitacion(self, habitacion, nuevo_estado):
+        for h in self.__habitaciones:
+            if h == habitacion:
+                h.estado = nuevo_estado
+            return        
