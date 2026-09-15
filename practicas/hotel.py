@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class TipoHabitacion(Enum):
     SIMPLE = 1
     DOBLE = 2
@@ -11,7 +12,7 @@ class EstadoHabitacion(Enum):
     EN_LIMPIEZA = 3
 
 
-class Habitacion():
+class Habitacion:
 
     def __init__(self, numero, tipo, estado):
         if numero < 0:
@@ -50,7 +51,7 @@ class Habitacion():
             raise RuntimeError("Estado Ingresado Invalido")
         self.__estado= estado
 
-class Hotel():
+class Hotel:
 
     def __init__(self):
         self.__habitaciones= []
