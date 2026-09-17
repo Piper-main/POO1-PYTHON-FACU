@@ -1,4 +1,4 @@
-### **📘 Consigna**
+ ### **📘 Consigna**
 
 Se desea modelar un sistema básico de **pedidos en un restaurante**.
 
