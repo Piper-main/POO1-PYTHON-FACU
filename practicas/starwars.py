@@ -6,7 +6,7 @@ class Nave:
         self.modelo = modelo 
         self.autonomia = autonomia 
 
-    def __str__(self):
+    def __str__(self):  
         return f"nave {self.modelo} (autonomia {self.autonomia})"
 
     def __repr__(self):
