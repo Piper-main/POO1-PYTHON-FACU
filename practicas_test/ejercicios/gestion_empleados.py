@@ -51,10 +51,6 @@ def calcular_gasto_sueldos(lista_empleados):
     return acum
 
 
-
-
- 
-
 nahuel = EmpleadoAdministrativo("nahuel", 34248671, 100000, 5)
 pichu = EmpleadoAdministrativo("pichu", 30085500, 200000, 5)
 silvia = EmpleadoTecnico("silvia", 28974456, 100000, 5)
