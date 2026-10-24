@@ -42,3 +42,16 @@ print(moto1.mostrar_datos())
 print()
 print(f"el costo de alquiler es ${auto1.calcular_costos(5)} pesos")
 print(f"el costo de alquiler es ${moto1.calcular_costos(5)} pesos")
+
+# Implementar una función denominada calcular_total_alquileres(lista_vehiculos, dias_alquiler) 
+# que reciba una lista de vehículos y una lista con la cantidad de días alquilados correspondientes 
+# a cada vehículo. La función deberá calcular y devolver el importe total de todos los alquileres.
+
+vehiculos=[auto1, moto1]
+dias=[5,5]
+
+def calcular_total_alquileres(lista_vehiculos, dias_alquiler):
+    acum = 0
+    for i in range(len(lista_vehiculos)):
+        acum += lista_vehiculos[i].calcular_costos(dias_alquiler[i])
+    return acum
