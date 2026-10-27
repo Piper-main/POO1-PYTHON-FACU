@@ -8,9 +8,9 @@ print(" ====================================================")
 print(" Ingrese los productos del carrito separados por coma")
 print()
 
-carrito = input(" Productos: ")
+carrito = input("Productos:")
 
 lista = carrito.split(',')
 
 for producto in lista:
-    print(f"{producto}")
+    print(f" {producto}")
