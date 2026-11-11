@@ -75,9 +75,9 @@ efectivo = Efectivo('Nahuel', 150000)
 tarjeta = Tarjeta('Felipe', 200000)
 billeteraVitual = BilleteraVirtual('Azul', 100000)
 
-efectivo.pagar(75000)
-tarjeta.pagar(100000)
-billeteraVitual.pagar(50000)
+efectivo.pagar(750)
+tarjeta.pagar(100)
+billeteraVitual.pagar(50)
 
 lista = [efectivo, tarjeta, billeteraVitual]
 
