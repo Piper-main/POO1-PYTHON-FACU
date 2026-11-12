@@ -62,7 +62,7 @@ class Empresa:
         total=0
         for p in self.__lista:
             total += p.importe_final()
-        return f"La suma de los importes es {total}"
+        return total
 
     def pago_mayor(self):
         pago= None
@@ -76,13 +76,13 @@ class Empresa:
                 if importe > mayor:
                     mayor = importe
                     pago = p
-        return f"El pago con mayor importe fue un: {pago}"
+        return pago
 
 empresa = Empresa()
 empresa.agregar_pago(pago)
 empresa.agregar_pago(pago1)
 empresa.agregar_pago(pago2)
 empresa.agregar_pago(pago3)
-print(empresa.importe_total())
-print(empresa.pago_mayor())
+print(f"La suma total es {empresa.importe_total()}")
+print(f"El pago de mayor monto fue un: {empresa.pago_mayor()}")
 
