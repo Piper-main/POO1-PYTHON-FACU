@@ -1,7 +1,4 @@
-
-
-
-class Pago:
+class Pago:#A
 
     def __init__(self, monto):
         self.__monto = monto
@@ -13,7 +10,7 @@ class Pago:
         return f"Pago por ${self.__monto}"
 
 
-class PagoContado(Pago):
+class PagoContado(Pago):#B
 
     def __init__(self, monto):
         super().__init__(monto)
@@ -48,6 +45,7 @@ print(pago.importe_final())
 print(pago1.importe_final())
 print(pago2.importe_final())
 print(pago3.importe_final())
+print(pago.consultar_monto())
 
 class Empresa:
 
@@ -86,3 +84,38 @@ empresa.agregar_pago(pago3)
 print(f"La suma total es {empresa.importe_total()}")
 print(f"El pago de mayor monto fue un: {empresa.pago_mayor()}")
 
+
+"""
+PREGUNTA TEORICA 1
+
+¿Cuál de las siguientes afirmaciones es correcta? Justifique.
+Si una clase B hereda de una clase A, entonces un objeto
+de B puede utilizarse en cualquier lugar donde se espere
+un objeto de A.
+
+● Siempre  --CORRECTA--   (Porque una clase hija hereda los métodos y atributos de la clase padre, por eso sus objetos 
+                           pueden utilizarse en los lugares donde se espera un objeto de la clase padre.)
+● Nunca
+● Sólo si B no redefine métodos
+● Sólo si A es abstracta
+
+No alcanza con marcar la opción; debe justificar
+"""
+"""
+PREGUNTA TEORICA 2 
+
+Se tiene la siguiente jerarquía:
+Vehiculo
+▲
+│
+Automovil
+El método arrancar() está implementado en Vehiculo.
+Automovil redefine arrancar().
+Si se ejecuta:
+v: Vehiculo = Automovil()
+v.arrancar()
+1. ¿Qué versión de arrancar() se ejecuta? Rta: LA DE AUTOMOVIL
+2. ¿En qué momento se decide qué implementación invocar: en
+compilación o en ejecución? Justifique. EN EJECUCION
+POR QUE PYTHON DECIDE CUANDO LLEGA A V.ARRANCAR()
+"""
